@@ -1,0 +1,987 @@
+/*
+#
+# ===> Project Created By Mahedi Hassan
+#
+# ===> Created Date : November 6, 2019
+#
+# ===> Assign Date : 
+#
+*/
+
+
+/* Font */
+
+@font-face {
+    src: url(../font/Philosopher-Regular.ttf);
+    font-family: head-font;
+}
+
+@font-face {
+    src: url(../font/Cardo-Regular.ttf);
+    font-family: para-font;
+}
+
+
+/*Default CSS Start*/
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    background: none;
+}
+
+img {
+    line-height: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+
+/*Default CSS End*/
+
+
+/*Back To top Button Start*/
+
+.top-btn {
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    background-color: #028794;
+    line-height: 50px;
+    border-radius: 15px;
+    color: white;
+    font-size: 30px;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    cursor: pointer;
+    z-index: 99;
+    display: none;
+}
+
+
+/*Back To top Button End*/
+
+
+/* Navbar Section Start */
+
+.full-nav {
+    background: #e0e0e0;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+}
+
+.dropdown:hover>.dropdown-menu {
+    display: block;
+    background: #fff;
+    margin-top: 1px;
+}
+
+
+/* .navbar-nav ul li a {
+    padding: 10px 10px;
+    background: red;
+} */
+
+.nav-item {
+    position: relative;
+    transition: all linear .5s;
+}
+
+.nav-link {
+    font-size: 18px;
+    font-family: para-font;
+    color: #111;
+}
+
+.nav-item a {
+    transition: all linear .5s;
+}
+
+.nav-item a:hover {
+    background: #006CB2;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.nav-item .dropdown-item {
+    transition: all linear .5s;
+}
+
+.nav-item .dropdown-item:hover {
+    background: #006CB2;
+    color: #fff;
+}
+
+
+/* Navbar Section End */
+
+
+/* Banner Section Start */
+
+.slider-text {
+    color: #fff;
+    position: absolute;
+}
+
+.slide {
+    background: url("../img/banner1.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover
+}
+
+.slide-text {
+    padding: 255px 0px;
+    color: #fff;
+}
+
+.slide-text h2 {
+    font-family: head-font;
+    font-size: 32px;
+}
+
+.slide-text p {
+    font-family: para-font;
+    font-size: 18px;
+}
+
+.slide-overlay {
+    background: rgba(0, 0, 0, .5);
+}
+
+.banner-text {
+    padding: 250px 0px;
+}
+
+.banner-text h2 {
+    font-family: head-font;
+    font-size: 45px;
+    color: #fff;
+}
+
+.banner-text p {
+    font-family: para-font;
+    font-size: 25px;
+    color: #fff;
+}
+
+
+/* Banner Section End */
+
+
+/* About Section Start */
+
+.about-head h2 {
+    font-family: head-font;
+    font-size: 42px;
+    color: #111;
+}
+
+.about-head h2 span {
+    color: #92badd;
+    font-size: 60px;
+}
+
+.about-detail p {
+    font-size: 18px;
+    font-family: para-font;
+}
+
+.about-detail p span {
+    color: #006CB2;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.full-about {
+    padding: 100px 0px;
+}
+
+.about-page-bg {
+    background: #f2f2f2;
+}
+
+
+/* About Section end */
+
+
+/* Service Section Start */
+
+.full-service {
+    background-image: url(../img/service-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 120px 0;
+}
+
+.service {
+    position: relative;
+}
+
+.service a {
+    position: absolute;
+    top: 90%;
+    left: 25%;
+    text-align: center;
+    color: #111;
+    background: #0e87be;
+    padding: 10px 20px;
+    border-radius: 3px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    opacity: 0;
+    transition: all linear .7s;
+}
+
+.service a:hover {
+    background: #854c9d;
+    color: #fff;
+}
+
+.service:hover>a {
+    opacity: 1;
+    top: 100%;
+}
+
+.service-detail h3 {
+    font-size: 22px;
+    font-family: head-font;
+    color: #111;
+    margin: 15px;
+}
+
+.service-detail p {
+    font-family: para-font;
+    font-size: 17px;
+    color: #111;
+}
+
+.service-img img {
+    border-radius: 50%;
+}
+
+.service-head h2 {
+    font-family: head-font;
+    font-size: 36px;
+    padding: 20px 0px;
+}
+
+
+/* Service Section End */
+
+
+/* Our Client Section Start */
+
+.full-client {
+    padding: 120px 0px;
+}
+
+.client-zone {
+    padding: 120px 16px;
+}
+
+.client-zone h3 {
+    font-size: 32px;
+    font-family: head-font;
+    color: #111;
+}
+
+.client-zone p {
+    font-family: para-font;
+    font-size: 18px;
+    color: #111;
+    position: relative;
+}
+
+.client-zone p:before {
+    position: absolute;
+    background: #006cb1;
+    height: 2px;
+    width: 45px;
+    bottom: -5px;
+    left: 0;
+    content: "";
+}
+
+.client-img {
+    padding: 10px 45px;
+}
+
+
+/* Our Client Section End */
+
+
+/* Our Vision and Mission Section Start */
+
+.full-vision {
+    display: grid;
+}
+
+.mission-main {
+    background-color: #f2f2f2;
+    background-attachment: fixed;
+    padding: 60px 0px;
+}
+
+.vision-text,
+.mission-text {
+    padding: 70px 25px;
+}
+
+.vision-text h2,
+.mission-text h2 {
+    font-size: 36px;
+    font-family: head-font;
+    color: #111;
+    position: relative;
+}
+
+.mission-text h2:before {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 60px;
+    background: #111;
+    bottom: 0px;
+    right: 2px;
+}
+
+.vision-text h2:before {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 60px;
+    background: #111;
+    bottom: 0px;
+    left: 2px;
+}
+
+.vision-text p,
+.mission-text p {
+    font-family: para-font;
+    font-size: 18px;
+    color: #111;
+}
+
+.vision-main {
+    padding: 60px 0px;
+}
+
+.vision-img,
+.mission-img {
+    position: relative;
+    z-index: 999;
+}
+
+.vision-img::before {
+    content: "";
+    position: absolute;
+    border: 4px solid #000033;
+    bottom: 10px;
+    right: 10px;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+}
+
+.mission-img::before {
+    content: "";
+    position: absolute;
+    border: 4px solid #000033;
+    top: 10px;
+    left: 10px;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+}
+
+
+/* Our Vision and Mission Section End */
+
+
+/* Footer Section Start */
+
+.full-footer {
+    padding: 120px 0px;
+    background: #f2f2f2;
+}
+
+.footer-head {
+    padding: 25px 0px;
+}
+
+.footer-nav ul li {
+    position: relative;
+}
+
+.footer-nav ul li a {
+    color: #111;
+    font-size: 25px;
+}
+
+.footer-nav ul li ul li a {
+    font-size: 16px;
+    position: relative;
+}
+
+.footer-nav ul li ul li a:before {
+    position: absolute;
+    content: "\00BB";
+    left: -15px;
+    top: -1px;
+}
+
+.footer-nav ul li ul li a:after {
+    position: absolute;
+    height: 2px;
+    width: 0px;
+    content: "";
+    background: #111;
+    bottom: -1px;
+    left: 0;
+    transition: ease all .7s;
+}
+
+.footer-nav ul li ul li a:hover::after {
+    width: 100%;
+    background: #854c9d;
+}
+
+.footer-contact ul li span {
+    font-size: 25px;
+}
+
+.footer-copy h3 {
+    font-size: 18px;
+}
+
+.footer-contact ul li ul li a {
+    color: #111;
+}
+
+
+/* Footer Section End */
+
+
+/*>>>>>>>>>>>>>>>>>>>>>>
+    About Page CSS
+<<<<<<<<<<<<<<<<<<<<<<*/
+
+.full-ap-banner {
+    background: url(../img/banner8.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.p-banner-overlay {
+    background: rgba(0, 0, 0, .5);
+}
+
+.p-banner-text h2 {
+    margin: 0;
+    font-size: 45px;
+    color: #fff;
+    font-family: head-font;
+    position: relative;
+}
+
+.p-banner-text {
+    padding: 220px 0px;
+}
+
+.p-banner-text h2::before {
+    position: absolute;
+    content: "";
+    left: 530px;
+    bottom: -5px;
+    background: #fff;
+    height: 2px;
+    width: 35px;
+}
+
+.vision-text p span {
+    font-weight: bolder;
+}
+
+
+/*>>>>>>>>>>>>>>>>>>
+    Solutions Page
+<<<<<<<<<<<<<<<<<<<<*/
+
+.banner-ap-popup {
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+    padding: 20px 10px;
+    background: #c7c7c799;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    color: #111;
+    box-shadow: -5px 5px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+.banner-ap-popup p {
+    margin-bottom: 0;
+    font-size: 16px;
+    font-family: para-font;
+}
+
+.solution-text p {
+    margin: 0;
+}
+
+.solution-text p span {
+    color: #0e87be;
+    font-weight: bold;
+    font-family: para-font;
+}
+
+.full-solution {
+    padding: 120px 0px;
+}
+
+.solution-text {
+    padding: 10px;
+}
+
+.solution-detail h4 {
+    color: #3387be;
+    font-family: para-font;
+}
+
+.solution-detail ul li {
+    list-style: disc;
+}
+
+.solution-detail ul {
+    margin: 0;
+}
+
+.solution-right {
+    margin-top: 35px;
+}
+
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>
+    Network Solution page 
+<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+.net-solution {
+    position: relative;
+}
+
+.net-solution img {
+    border: 1px solid #f2f2f2;
+    border-radius: 50%;
+}
+
+.net-solution h2 {
+    font-size: 24px;
+    font-family: head-font;
+    color: #111;
+}
+
+.net-solution p {
+    font-size: 16px;
+    font-family: para-font;
+}
+
+.net-solution p span {
+    color: #111;
+    font-weight: bold;
+}
+
+.net-solution span {
+    color: #006CB2;
+    font-size: 18px;
+}
+
+.net-solution a {
+    padding: 10px 20px;
+    background: #006CB2;
+    color: #fff;
+    border-radius: 2px;
+}
+
+.net-solution:hover>a {
+    opacity: 1;
+    bottom: -50px;
+}
+
+.net-solution a {
+    padding: 10px 20px;
+    background: #006CB2;
+    color: #fff;
+    border-radius: 2px;
+    position: absolute;
+    left: 105px;
+    bottom: 0px;
+    opacity: 0;
+    transition: all linear .7s;
+}
+
+.full-network {
+    padding: 120px 0;
+}
+
+
+/* Offer Page Start */
+
+.offer-box {
+    background: aliceblue;
+    color: #006CB2;
+    padding: 60px 60px;
+    font-family: head-font;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .5);
+}
+
+
+/* Offer Page End */
+
+
+/* Unified Page Css Start */
+
+.wireless-bg-main {
+    background: url(../img/banner7.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.wireless-bg-main::before {
+    position: absolute;
+    content: "";
+    top: 0px;
+    left: 0px;
+    background: rgba(0, 0, 0, .5);
+}
+
+.wireless-bg-text h2 {
+    font-family: head-font;
+    color: #fff;
+    font-size: 35px;
+    margin: 0;
+    position: relative;
+}
+
+.wireless-bg-text h2::before {
+    position: absolute;
+    content: "";
+    background: #fff;
+    height: 2px;
+    width: 45px;
+    bottom: 0px;
+    right: 550px;
+}
+
+.wireless-bg-text {
+    padding: 200px 0px;
+}
+
+.wireless-bg-overlay {
+    background: rgba(0, 0, 0, .5);
+}
+
+.wirelesss-img img {
+    border-radius: 50%;
+}
+
+.wireless-text h2 {
+    font-size: 30px;
+    font-family: head-font;
+}
+
+.wireless-text h3 {
+    font-size: 23px;
+}
+
+.wireless-text h3 {
+    font-size: 23px;
+    font-family: head-font;
+}
+
+.wireless-text p {
+    font-family: para-font;
+    font-size: 16px;
+}
+
+.wireless-text span {
+    color: #006CB2;
+    font-family: head-font;
+}
+
+.wireless-text ul {
+    font-size: 15px;
+    list-style: disc;
+    font-family: para-font;
+}
+
+.full-wireless-1 {
+    padding: 120px 0px;
+}
+
+.full-net-solution-bg-text h2 {
+    font-size: 36px;
+    font-family: head-font;
+    color: #fff;
+}
+
+.full-net-solution-bg-text p {
+    font-size: 16px;
+    font-family: para-font;
+    color: #fff;
+}
+
+.full-net-solution-bg {
+    background: url(../img/video-conference.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.full-net-solution-bg-overlay {
+    background: rgba(0, 0, 0, .5);
+}
+
+.full-net-solution-bg-text {
+    padding: 220px;
+    position: relative;
+}
+
+.full-net-solution-bg-text:before {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 45px;
+    background: #fff;
+    bottom: 225px;
+    left: 535px;
+}
+
+.network-c-img img {
+    border-radius: 50%;
+}
+
+.network-c-text h2 {
+    font-family: head-font;
+    font-size: 36px;
+}
+
+.network-c-text p {
+    font-family: para-font;
+    font-size: 16px;
+}
+
+.network-c-text span {
+    font-family: head-para;
+    font-size: 18px;
+    color: #006CB2;
+}
+
+.network-c-text ul {
+    list-style: disc;
+    font-size: 16px;
+    font-family: para-font;
+}
+
+.full-network-c {
+    padding: 120px 0px;
+}
+
+
+/* Unified Page Css End  */
+
+
+/* UPS solution Page */
+
+.ups-solution-bg {
+    background: url(../img/ups-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.ups-solution-bg-overlay {
+    background: rgba(0, 0, 0, .5);
+}
+
+.ups-solution-bg-text h2 {
+    color: #fff;
+    font-family: head-font;
+    font-size: 36px;
+}
+
+.ups-solution-bg-text p {
+    color: #fff;
+    font-size: 16px;
+    font-family: para-font;
+}
+
+.ups-solution-bg-text {
+    padding: 240px;
+    position: relative;
+}
+
+.ups-solution-bg-text:before {
+    content: "";
+    height: 2px;
+    width: 40px;
+    background: #fff;
+    bottom: 38%;
+    left: 48%;
+    position: absolute;
+}
+
+.ups-solution-text p {
+    font-family: para-font;
+    font-size: 18px;
+}
+
+.ups-solution-text span {
+    font-size: 20px;
+    font-family: para-font;
+    color: #006CB2;
+}
+
+.ups-solution-text ul {
+    list-style: disc;
+    font-size: 16px;
+    font-family: para-font;
+}
+
+.full-ups-solution-detail {
+    padding: 120px 0px;
+}
+
+
+/* UPS Page End */
+
+
+/* CCTV Page Start */
+
+.full-cctv-bg {
+    background: url(../img/home-security-systems-with-security-cameras-from-stat-communications-near-watertown-ny.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.cctv-bg-main {
+    position: relative;
+    padding: 235px;
+}
+
+.cctv-bg-main:before {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 45px;
+    background: #fff;
+    bottom: 42%;
+    left: 49%;
+}
+
+.cctv-bg-overlay {
+    background: rgba(0, 0, 0, .5);
+}
+
+.cctv-bg-main h2 {
+    font-size: 42px;
+    font-family: head-font;
+    color: #fff;
+}
+
+.cctv-bg-main p {
+    color: #fff;
+    font-size: 18px;
+    font-family: para-font;
+}
+
+.cctv-query-box {
+    background: rgba(46, 142, 205, 0.94);
+    padding: 45px 45px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.5);
+}
+
+.cctv-query-box h3 {
+    color: #fff;
+    font-family: head-font;
+    font-size: 22px;
+}
+
+.cctv-query-box p {
+    color: #fff;
+    font-size: 14px;
+    font-family: para-font;
+}
+
+.cctv-product-main {
+    padding: 120px 0px;
+}
+
+.full-cctv-page p {
+    font-family: para-font;
+}
+
+.cctv-product-text h3 {
+    font-family: head-font;
+}
+
+.cctv-page-head p {
+    padding: 55px;
+}
+
+.cctv-product-text a {
+    font-size: 18px;
+    font-family: head-font;
+    color: #111;
+}
+
+.cctv-product-text a {
+    font-size: 18px;
+    font-family: head-font;
+    color: #111;
+    border: 1px solid #111;
+    padding: 10px;
+    transition: border-radius 2s, .9s, 2s, 1s cubic-bezier(0.4, 0, 0.2, 1);
+    text-align: center;
+}
+
+.cctv-product-text a:hover {
+    border-radius: 10px 10px 10px 10px;
+}
+
+
+/* CCTV Page End */
+
+
+/* Client Page Start */
+
+.client-head h2 {
+    font-family: head-font;
+    font-size: 40px;
+    color: #111;
+    padding: 30px;
+}
+
+.client-main {
+    padding: 120px;
+}
+
+
+/* client page End */
